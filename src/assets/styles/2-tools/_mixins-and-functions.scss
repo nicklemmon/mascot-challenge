@@ -1,0 +1,9 @@
+@mixin flex-center() {
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin size($val) {
+  height: $val;
+  width: $val;
+}

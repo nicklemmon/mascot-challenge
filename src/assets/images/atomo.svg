@@ -1,0 +1,29 @@
+<svg class="atomo" width="330px" height="319px" viewBox="0 0 330 319" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-690.000000, -140.000000)">
+            <g id="atomo" transform="translate(671.000000, 58.000000)">
+                <g id="Group">
+                    <g id="Layer_1"></g>
+                    <g id="Layer_4" transform="translate(22.000000, 85.000000)">
+                        <g id="face" transform="translate(11.000000, 0.000000)">
+                            <circle id="circle_1_" stroke="#238B61" stroke-width="12" fill="#32AD7A" fill-rule="nonzero" cx="157" cy="156" r="126"></circle>
+                            <circle id="ring" stroke="#58595B" stroke-width="6" cx="156.8" cy="156.5" r="155.9"></circle>
+                            <path d="M82.2,230.9 C78.4,229.3 149.3,265.5 232.1,213.6" id="mouth" stroke="#238B61" stroke-width="6" stroke-linecap="round"></path>
+                        </g>
+                        <g id="eye--left" transform="translate(62.000000, 163.000000)" fill-rule="nonzero">
+                            <ellipse id="Oval" fill="#414042" cx="7.9" cy="11.4" rx="7.2" ry="10.8"></ellipse>
+                            <ellipse id="Oval" fill="#FFFFFF" cx="7.9" cy="8.4" rx="3.6" ry="5.4"></ellipse>
+                        </g>
+                        <g id="eye--left_1_" transform="translate(231.000000, 146.000000)" fill-rule="nonzero">
+                            <ellipse id="Oval" fill="#414042" transform="translate(10.619220, 12.402140) rotate(-15.765172) translate(-10.619220, -12.402140) " cx="10.61922" cy="12.40214" rx="7.20012474" ry="10.8001871"></ellipse>
+                            <ellipse id="Oval" fill="#FFFFFF" transform="translate(9.815070, 9.498540) rotate(-15.765172) translate(-9.815070, -9.498540) " cx="9.81507" cy="9.49854" rx="3.60006237" ry="5.40009355"></ellipse>
+                        </g>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="6" fill="#32AD7A" fill-rule="nonzero" cx="285.7" cy="53.1" r="9"></circle>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="6" fill="#32AD7A" fill-rule="nonzero" cx="11.9" cy="169.6" r="11.9"></circle>
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="6" fill="#32AD7A" fill-rule="nonzero" cx="241.1" cy="295" r="18"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

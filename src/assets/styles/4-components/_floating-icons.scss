@@ -1,0 +1,83 @@
+.floating-icons {
+  @include size(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.floating-icons__icon {
+  position: absolute;
+  fill: rgba($color--primary, 0.4);
+
+  &--1 {
+    height: $spacing--base * 5;
+    top: $spacing--base * 10;
+    left: 0;
+  }
+
+  &--2 {
+    height: $spacing--base * 8;
+    top: $spacing--base * 40;
+    right: -$spacing--base * 2;
+  }
+
+  &--3 {
+    height: $spacing--base * 3;
+    top: $spacing--base * 16;
+    left: $spacing--base * 5;
+  }
+
+  &--4 {
+    height: $spacing--base * 4;
+    top: $spacing--base * 35;
+    left: $spacing--base * 10;
+  }
+
+  &--5 {
+    height: $spacing--base * 2;
+    top: $spacing--base * 40;
+    right: $spacing--base * 10;
+  }
+
+  &--6 {
+    height: $spacing--base * 4;
+    top: $spacing--base * 60;
+    right: $spacing--base * 10;
+  }
+
+  &--7 {
+    height: $spacing--base * 8;
+    top: $spacing--base * 80;
+    left: $spacing--base * 5;
+  }
+
+  &--8 {
+    height: $spacing--base * 4;
+    top: $spacing--base * 88;
+    left: $spacing--base * 5;
+  }
+
+  &--9 {
+    height: $spacing--base * 2;
+    top: $spacing--base * 92;
+    left: $spacing--base * 10;
+  }
+
+  &--10 {
+    height: $spacing--base * 7;
+    top: $spacing--base * 45;
+    right: $spacing--base * 8;
+  }
+
+  &--11 {
+    height: $spacing--base * 9;
+    top: $spacing--base * 3;
+    left: $spacing--base * 4;
+  }
+
+  &--12 {
+    height: $spacing--base * 5;
+    top: $spacing--base * 125;
+    left: $spacing--base;
+  }
+}

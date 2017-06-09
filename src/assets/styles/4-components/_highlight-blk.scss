@@ -1,0 +1,46 @@
+.highlight-blk {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid $color--gray;
+  padding: $spacing--sm $spacing--sm $spacing--sm 0;
+
+  &:first-of-type {
+    border-top: 0;
+  }
+}
+
+.highlight-blk__icon {
+  @include size($spacing--xl);
+  @include flex-center();
+  display: flex;
+  font-size: 50px;
+  color: $color--white;
+  background: scale-color($color--secondary, $lightness: 10%);
+  border-radius: $border-radius * 2;
+  border: 2px solid $color--secondary--dark;
+  border-bottom: 6px solid $color--secondary--dark;
+  transition: background $anim-dur $anim-easing,
+              transform ($anim-dur * 2) $anim-easing;
+
+  &:hover {
+    background: scale-color($color--secondary--dark, $lightness: 10%);
+    transform: rotateY(180deg) scale(1.1);
+  }
+}
+
+.highlight-blk__content {
+  width: 85%;
+  padding-left: $spacing--sm;
+}
+
+.highlight-blk__heading {
+  font-weight: 400;
+  margin-bottom: $spacing--xs;
+}
+
+.highlight-blk__descr {
+  line-height: 1.33;
+  margin-bottom: 0;
+  font-size: 18px;
+  color: $color--gray;
+}

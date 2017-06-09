@@ -1,0 +1,54 @@
+.btn {
+  @include flex-center();
+  display: flex;
+  border-radius: $spacing--base / 4;
+  background: linear-gradient(0deg, $color--secondary, $color--secondary);
+  border: 2px solid $color--secondary--dark;
+  border-bottom: 6px solid $color--secondary--dark;
+  color: $color--white;
+  height: $spacing--md;
+  padding: $spacing--xs $spacing--sm;
+  cursor: pointer;
+  position: relative; // allows absolute positioning within
+  overflow: hidden;
+  max-width: 225px;
+
+  &:after {
+    @include size(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    opacity: 0;
+    transition: opacity $anim-dur $anim-easing;
+  }
+
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.btn__content {
+  position: relative;
+  z-index: $layer--high;
+}
+
+.btn--primary {
+  background: $color--primary;
+  border-color: $color--primary--dark;
+
+  &:after {
+    background: scale-color($color--primary--dark, $lightness: 10%);
+  }
+}
+
+.btn--secondary {
+  background: $color--secondary;
+  border-color: $color--secondary--dark;
+
+  &:after {
+    background: scale-color($color--secondary--dark, $lightness: 10%);
+  }
+}

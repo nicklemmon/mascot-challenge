@@ -1,0 +1,19 @@
+.header {
+  @include flex-center();
+  display: flex;
+  position: relative;
+  z-index: $layer--higher;
+  background: $color--gray--darker;
+  border-bottom: 2px solid #000;
+  color: $color--white;
+  height: $spacing--md;
+  width: 100%;
+}
+
+.header__logo-link {
+  height: $spacing--sm;
+}
+
+.header__logo {
+  height: 100%;
+}

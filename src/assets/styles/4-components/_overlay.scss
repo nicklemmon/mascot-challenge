@@ -1,0 +1,18 @@
+.overlay {
+  @include size(100%);
+  position: absolute;
+  z-index: $layer--highest;
+  top: 0;
+  left: 0;
+  background: rgba(#000, 0.85);
+  visibility: hidden;
+  opacity: 0;
+
+  &.is-visible {
+    animation: fadeIn $anim-dur $anim-easing forwards;
+  }
+
+  &.is-invisible {
+    animation: fadeOut $anim-dur $anim-easing forwards;
+  }
+}

@@ -1,0 +1,134 @@
+extends layouts/_default.pug
+
+block content
+  .lightbox.u-text-align--center(aria-hidden="true")
+    .lightbox__header
+      h1 Meet Atomo
+
+    .lightbox__content.u-max-width--md.u-mg-x--auto
+      p Atomo, like all atoms, was formed during the creation of the universe who has been searching for purpose since the beginning of time. His newfound purpose is to market and spread the word regarding the cutting-edge, open-source text-editor, <a href="http://atom.io">Atom</a> by our friends at <a href="http://github.io">Github</a>.
+
+      p Atomo was built in Adobe Illustrator, exported as an SVG, included inline, and animated using the <a href="http://greensock.com">Greensock Animation Platform</a>.
+
+      p The design is intended to be simple and expressive, to allow for the demonstration of various emotions while exhibiting features of the Atom text editor.
+
+    .lightbox__footer
+      a.btn.btn--primary.lightbox__close.u-mg-x--auto(role="button")
+        .btn__content Close
+
+  .overlay.lightbox__close(role="presentation")
+
+  .floating-icons(role="presentation")
+    - var classes = "floating-icons__icon--1"
+    - var speed = "3"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--2"
+    - var speed = "10"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--3"
+    - var speed = "2"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--4"
+    - var speed = "1"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--5"
+    - var speed = "1"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--6"
+    - var speed = "2"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--7"
+    - var speed = "8"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--8"
+    - var speed = "3"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--9"
+    - var speed = "2"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--10"
+    - var speed = "7"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--11"
+    - var speed = "9"
+    include partials/_icon--code.pug
+
+    - var classes = "floating-icons__icon--12"
+    - var speed = "6"
+    include partials/_icon--code.pug
+
+  header.header
+    a.header__logo-link(href="index.html")
+      img.header__logo(src="images/atom-logo.svg", alt="Atom Text Editor")
+
+  main.content
+    section.section.section--secondary
+      .u-max-width--lg.u-mg-x--auto.u-display--flex
+        .section__1-2.u-display--flex.u-flex-direction--column.u-align-items--center.u-justify-content--center
+          img.logo.u-mg-b--xs(src="images/atom-logo.png", alt="Atom Text Editor Logo")
+
+          h1.u-text-align--center.u-mg-b--sm A hackable text editor <br>for the 21st Century
+
+          a.btn.btn--secondary
+            span.btn__content Download for Mac
+
+        .section__1-2.u-display--flex.u-align-items--center.u-position--relative
+          include partials/_atomo--smile.pug
+
+          a.nametag.lightbox__open(role="button")
+            p.nametag__title Hello
+            p.nametag__subtitle my name is
+
+            p.nametag__name Atomo
+
+    section.section.section--primary
+      img.screenshot.u-breakout--vert.u-mg-x--auto.u-display--block.u-mg-b--lg.u-max-width--md(src="images/atom-screenshot.png", alt="The Atom Text Editor in action")
+
+      p.para--highlight.u-text-align--center.u-mg-x--auto.u-max-width--md Atom is a text editor that's modern, approachable, yet hackable to the core &mdash; a tool you can customize to do anything but also use productively without ever touching a config file.
+
+    section.section.section--secondary
+      .u-display--flex.u-max-width--lg.u-mg-x--auto
+        .u-display--flex.u-align-items--center.u-justify-content--flex-start.atomo--big-smile-container
+          include partials/_atomo--big-smile.pug
+
+        .section__2-3
+          .u-mg-l--md
+            h2 Full featured, right out of the box
+
+            include mixins/_highlight-blk.pug
+
+            +highlight-blk('ion-ios-monitor-outline', 'Cross-platform editing', 'Atom works across operating systems. You can use it on OS X, Windows, or Linux.')
+
+            +highlight-blk('ion-ios-albums-outline', 'Built-in package manager', 'Search for and install new packages or start creating your own—all from within Atom.')
+
+            +highlight-blk('ion-ios-lightbulb-outline', 'Smart autocompletion', 'Atom helps you write code faster with a smart, flexible autocomplete.')
+
+  footer.footer
+    nav.u-max-width--lg.u-mg-x--auto.u-display--flex
+      ul.footer__ul.section__3-4
+        li.footer__li
+          a.footer__a(href="#") Terms of use
+        li.footer__li
+          a.footer__a(href="#") Privacy
+        li.footer__li
+          a.footer__a(href="#") Code of Conduct
+        li.footer__li
+          a.footer__a(href="#") Releases
+        li.footer__li
+          a.footer__a(href="#") FAQ
+        li.footer__li
+          a.footer__a(href="#") Contact
+
+      .section__1-4.u-text-align--right
+        a(href="http://github.io").footer__github
+          .ion.ion-social-github

@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  @include size(100%);
+  color: $color--base;
+}
+
+a {
+  cursor: pointer;
+  color: $color--secondary;
+}

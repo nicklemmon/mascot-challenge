@@ -1,0 +1,51 @@
+// Colors
+$color--white: #FFF;
+
+$color--gray: #828282;
+$color--gray--light: #F1F1F1;
+$color--gray--dark: #58595B;
+$color--gray--darker: #3E3E40;
+
+$color--base: #222;
+
+$color--primary: #32AD7A;
+$color--primary--dark: #238B61;
+
+$color--secondary: #E34B30;
+$color--secondary--dark: scale-color($color--secondary, $lightness: -20%);
+
+$color--tertiary: $color--gray--light; // was #FAF6EC
+$color--tertiary--dark: scale-color($color--tertiary, $lightness: -20%);
+
+// Spacing - pixels, baby!
+$spacing--base: 20px;
+
+$spacing--xs: $spacing--base / 2;
+$spacing--xs: $spacing--base;
+$spacing--sm: $spacing--base * 2;
+$spacing--md: $spacing--base * 3;
+$spacing--lg: $spacing--base * 4;
+$spacing--xl: $spacing--base * 5;
+$spacing--xxl: $spacing--base * 6;
+
+// Breakpoints
+$breakpoint--sm: 600px;
+$breakpoint--md: 800px;
+$breakpoint--lg: 1000px;
+$breakpoint--xl: 1200px;
+
+// Animation
+$anim-dur: 0.3s;
+$anim-easing: ease-in-out;
+
+// Layer
+$layer--lowest: -30;
+$layer--lower: -20;
+$layer--low: -10;
+$layer--mid: 0;
+$layer--high: 10;
+$layer--higher: 20;
+$layer--highest: 30;
+
+// Misc
+$border-radius: 4px;

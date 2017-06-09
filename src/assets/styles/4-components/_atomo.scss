@@ -1,0 +1,22 @@
+.atomo {
+  margin: 0 auto;
+  width: 125%;
+}
+
+.atomo--smile {
+  height: 450px;
+  padding: $spacing--sm;
+}
+
+.atomo--big-smile {
+  margin-top: -$spacing--base * 15;
+  padding: $spacing--xs;
+  width: 100%;
+  height: 100%;
+}
+
+// Hacky...lord forgive my sins
+.atomo--big-smile-container {
+  width: 40%;
+  margin-left: -6.67%;
+}
