@@ -98,6 +98,10 @@ gulp.task('default', ['clean'], function() {
   return runSequence('markup', 'styles', 'images', 'fonts', 'scripts', 'browser-sync', 'watch');
 });
 
+gulp.task('build', ['clean'], function() {
+  return runSequence('markup', 'styles', 'images', 'fonts', 'scripts');
+});
+
 gulp.task('watch', function(){
   gulp.watch('./src/assets/styles/**/*.scss', ['styles', browserSync.reload]);
   gulp.watch('./src/assets/scripts/**/*.js', ['scripts', browserSync.reload]);
